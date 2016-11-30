@@ -1,4 +1,4 @@
-% TCO of C-RAN Architecture for 5G
+% TCO of C-RAN Architecture for 5G.
 
 % Steps
 %   Traffic Demand
