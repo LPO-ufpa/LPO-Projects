@@ -130,7 +130,9 @@ TOT_Maint = RRH_Mcost + CO_Mcost + SWlic_cost + Mon_cost;
 
 %% --- Plotting --- %%
 
+%{
 figure(1);
 y = [TOT_EQcost TOT_InfraCost; 200000 150000];
 bar(y,0.5,'stacked');
 set(gca,'XTickLabel',{'CAPEX', 'OPEX'});
+%}
