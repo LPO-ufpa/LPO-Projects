@@ -63,7 +63,7 @@ N_Port_F= 10;                         % Number of ports to be install
 N_Eq_F= 20;                           % Total number of equipment cost 
 Pr_Tech_F= 30;                        % Technician salary per hour
 
-for k = 1:lenght(T_InstPort_F * N_Port_F);
+for k = 1:length(T_InstPort_F * N_Port_F);
 TOT_FiberInstCost= TOT_FiberInstCost + (T_InstPort_F * N_Port_F) * (N_Eq_F * Pr_Tech_F);
 
 
@@ -75,7 +75,7 @@ N_Port_Mw= 10;                         % Number of ports to be install
 N_Eq_Mw= 20;                           % Total number of equipment cost 
 Pr_Tech_Mw= 30;                        % Technician salary per hour
 
-for k = 1:lenght(T_InstPort_Mw * N_Port_Mw);
+for k = 1:length(T_InstPort_Mw * N_Port_Mw);
 TOT_MWInstCost= TOT_MWInstCost + (T_InstPort_Mw * N_Port_Mw) * (N_Eq_Mw * Pr_Tech_Mw);
 
 
@@ -129,9 +129,8 @@ TOT_Maint = RRH_Mcost + CO_Mcost + SWlic_cost + Mon_cost;
 
 %% --- Plotting --- %%
 
-%{
+
 figure(1);
 y = [TOT_EQcost TOT_InfraCost; 200000 150000];
 bar(y,0.5,'stacked');
 set(gca,'XTickLabel',{'CAPEX', 'OPEX'});
-%}
